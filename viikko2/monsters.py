@@ -1,7 +1,4 @@
 
-from cmath import tau
-
-
 def count(r):
     if r[0][0] == "#":
         return -1

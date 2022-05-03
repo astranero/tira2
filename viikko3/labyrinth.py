@@ -29,9 +29,6 @@ def count(r):
 
     vierailtu = set()
     return count_length(graph, alkusolmu, kohdesolmu, vierailtu)
-    
-       
-
 
 def count_length(graph, alkusolmu, kohdesolmu, vierailtu):
     jono = deque()
@@ -48,7 +45,7 @@ def count_length(graph, alkusolmu, kohdesolmu, vierailtu):
                 vierailtu.add(naapuri)
                 jono.appendleft((naapuri, pituus+1))
     return -1
-
+    
 def check_direction(r, graph, paikka_numero, numero, j,i):
     if r[j][i] == "#":
         return False

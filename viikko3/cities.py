@@ -25,9 +25,6 @@ class Cities:
                 return True
         return False
         
-            
-     
-
 if __name__ == "__main__":
     c = Cities(5)
     c.add_road(2,3)
