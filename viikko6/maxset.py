@@ -32,7 +32,7 @@ if __name__ == "__main__":
     print(m.get_max())
     print(m.get_max())
     m.merge(4,5)
-    m.merge(3,4)
+    m.merge(4,3)
     m.merge(2,5)
     m.merge(4,5)
     print(m.get_max())

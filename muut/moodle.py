@@ -18,11 +18,10 @@ class Union_find:
     def unify(self,a,b):
         a = self.find(a)
         b = self.find(b)
-        if a != b:
-            if self.koko[a] < self.koko[b]:
-                a,b=b,a
-            self.koko[a] += self.koko[b]
-            self.vanhempi[b] = a
+        if self.koko[a] < self.koko[b]:
+            a,b=b,a
+        self.koko[a] += self.koko[b]
+        self.vanhempi[b] = a
     
     def count(self):
         alku = time.time()
